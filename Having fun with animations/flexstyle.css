@@ -1,0 +1,138 @@
+body {
+    max-width: 100%;
+    max-height: 500%;
+    
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    animation: slide 2s forwards;
+    
+}
+
+@keyframes slide {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+
+h1 {
+    color: aliceblue;
+    padding: auto;
+    font-size: 40px;
+}
+
+nav {
+    float: right;
+    list-style: none;
+    
+    
+}
+
+li {
+    display: inline-block;
+    font-size: 30px;
+    width: 100px;
+    padding-top: 30px;
+}
+
+li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: yellow;
+     
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    gap: 5em;
+    margin-top: 150px;
+    
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 20px;
+    opacity: 0.5;
+    transition-duration: 3s;
+    transition-property: background, width, height, color, opacity, transform;
+    
+}
+
+
+
+.box:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+    width: 230px;
+    height: 230px;
+    color: white;
+    transform: rotate(360deg);
+}
+
+
+.box1 {
+    background-color: aliceblue;   
+}
+
+.box2 {
+    background-color: greenyellow;   
+}
+
+.box3 {
+    background-color: lightyellow;   
+}
+
+.box4 {
+    background-color: palevioletred;   
+}
+
+
+.infinite {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 80px auto;
+    animation: spin 2s infinite;
+    animation-timing-function: linear;
+    overflow: hidden;
+}
+
+
+@keyframes spin {
+    to{transform: rotate(360deg)}
+}
+
+h2 {
+    padding-top: 30%;
+    font-family: sans-serif;
+}
+
+#hypno {
+     animation: spin 1s infinite;
+     animation-timing-function: linear;
+     border-radius: 100%;
+     display: flex;
+     width: 40%;
+     height: auto;
+     margin: 80px auto;
+}
